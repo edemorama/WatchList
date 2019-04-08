@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+GET    /watchlist/get           com.edemorama.watchlist.controllers.WatchListController.get(authtoken)
+POST   /watchlist/add           com.edemorama.watchlist.controllers.WatchListController.add(authtoken)
+POST   /watchlist/delete        com.edemorama.watchlist.controllers.WatchListController.delete(authtoken)
+GET    /watchlist/authorise     com.edemorama.watchlist.controllers.AuthController.authorise(custId)
+GET    /watchlist/unauthorise   com.edemorama.watchlist.controllers.AuthController.unauthorise(custId)
